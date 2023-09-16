@@ -8,16 +8,22 @@
 }
 
 @font-face {
-  font-family: 'Neue-hass-grotesk';
-  src: url('../public/Fonts/neue-haas-grotesk-display-link.rtf')
-    format('truetype');
+  font-family: 'Neue-haas-grotesk';
+  src: url('../public/Fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
 }
 body {
   color: whitesmoke;
 }
 
-nav {
+nav,
+h1,
+h3 {
   font-family: 'Norwester';
+}
+
+p,
+a {
+  font-family: 'Neue-haas-grotesk';
 }
 
 /*------------------------ BACKGROUNDS ------------------*/

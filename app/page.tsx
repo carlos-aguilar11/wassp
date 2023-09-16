@@ -6,7 +6,6 @@ export default function Home() {
     <main className="background-image">
       <Navbar />
       <Title />
-      <h1> HOLA CTM!</h1>
     </main>
   )
 }
