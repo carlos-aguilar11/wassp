@@ -11,8 +11,10 @@
   font-family: 'Neue-haas-grotesk';
   src: url('../public/Fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
 }
+
 body {
   color: whitesmoke;
+  background-color: black;
 }
 
 nav,
@@ -27,8 +29,22 @@ a {
 }
 
 /*------------------------ BACKGROUNDS ------------------*/
-.background-image {
-  background-image: url('../public/01.jpg');
+.home-background {
+  background-image: linear-gradient(rgba(5, 36, 54, 0.7), rgba(5, 36, 54, 0.7)),
+    url('../public/01.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.welcome-background {
+  background: linear-gradient(
+      180deg,
+      #052436 0%,
+      rgba(5, 36, 54, 0) 20%,
+      #000719 100%
+    ),
+    url('../public/Layers.svg'), #000719;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
