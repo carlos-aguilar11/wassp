@@ -12,12 +12,16 @@
   src: url('../public/Fonts/neue-haas-grotesk-display-link.rtf')
     format('truetype');
 }
-
 body {
-  background-color: rgb(0, 0, 12);
-  color: aliceblue;
+  color: whitesmoke;
 }
 
-h1 {
+nav {
   font-family: 'Norwester';
+}
+
+.background-image {
+  background-image: url('../public/01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
