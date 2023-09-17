@@ -1,25 +1,13 @@
 'use client'
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { animated, useSpring } from 'react-spring'
 
 const Navbar = () => {
-  const [springProps, set] = useSpring(() => ({
-    opacity: 0,
+  const { opacity } = useSpring({
+    opacity: typeof window !== 'undefined' && window.scrollY > 100 ? 1 : 0,
     config: { duration: 200 },
-  }))
-
-  useEffect(() => {
-    const handleScroll = () => {
-      set({ opacity: window.scrollY > 100 ? 1 : 0 })
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [set])
+  })
 
   return (
     <animated.nav
@@ -29,6 +17,7 @@ const Navbar = () => {
         left: 0,
         right: 0,
         zIndex: 1000,
+        background: opacity.to((o) => 'rgba(255, 255, 255, ${o)'),
       }}
     >
       <nav className="bg-transparent py-4 md:py-14 px-1 md:px-8 md:mx-0">

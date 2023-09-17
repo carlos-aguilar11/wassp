@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/*------------------------ FONTS ------------------*/
+
 @font-face {
   font-family: 'Norwester';
   src: url('../public/Fonts/norwester.otf') format('opentype');
@@ -10,11 +12,6 @@
 @font-face {
   font-family: 'Neue-haas-grotesk';
   src: url('../public/Fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
-}
-
-body {
-  color: whitesmoke;
-  background-color: black;
 }
 
 nav,
@@ -27,7 +24,19 @@ p,
 a {
   font-family: 'Neue-haas-grotesk';
 }
+/*------------------------ GENERAL ------------------*/
 
+body {
+  color: whitesmoke;
+  background-color: black;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0); /* Initially transparent */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  backdrop-filter: blur(0); /* No blur initially */
+  /* Other styling for your Navbar */
+}
 /*------------------------ BACKGROUNDS ------------------*/
 .home-background {
   background-image: linear-gradient(
