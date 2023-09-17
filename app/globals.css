@@ -24,10 +24,14 @@ p,
 a {
   font-family: 'Neue-haas-grotesk';
 }
+
+.p-norwester {
+  font-family: 'Norwester';
+}
 /*------------------------ GENERAL ------------------*/
 
 body {
-  color: whitesmoke;
+  color: rgb(255, 255, 255, 1);
   background-color: black;
 }
 
@@ -50,9 +54,13 @@ body {
 }
 
 .welcome-background {
-  background: url('../public/Layers.svg'),
-    linear-gradient(180deg, #052436 100%, #052436 100%);
-
+  background: linear-gradient(180deg, #052436 100%, #052436 100%);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+
+.overlay {
+  background-image: url('../public/Layers.svg');
+  background-position-y: -200px;
+  background-repeat: no-repeat;
 }
