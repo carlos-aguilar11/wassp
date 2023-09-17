@@ -6,14 +6,14 @@ const Welcome = () => {
     <main className="welcome-background">
       <div className="overlay">
         <div className="flex flex-col ml-1 md:ml-72 lg:ml-96 px-0 md:px-1 lg:px-8 pt-56 pb-52">
-          <div className="lg:my-1 lg:ml-6">
+          <div className="my-0 lg:my-1 ml-3 lg:ml-6">
             <h1
-              className="text-6xl text-left leading-tight ml-10 pl-18 mb-2.5"
+              className="text-3xl md:text-5xl lg:text-6xl text-left leading-tight lg:ml-10 lg:pl-18 mb-8"
               style={{ maxWidth: '700px' }}
             >
               WELCOME TO THE WORLD OF WASSP MULTIBEAM
             </h1>
-            <div className="text-left pl-10 pt-8 pb-18 mt-1 mb-4 md:ml-18 relative">
+            <div className="text-left leading-tight lg:ml-10 lg:pl-18 ">
               <div className="text-base leading-tight flex space-x-24">
                 <p className="text-sm p-norwester">01</p>
                 <p
@@ -33,7 +33,7 @@ const Welcome = () => {
                   </p>
                 </div>
               </div>
-              <div className="absolute bottom-2 top-52 right-96 pr-2">
+              <div className="flex left-1 bottom-2 top-52 right-0">
                 <a
                   href="#contact"
                   className="text-white bg-transparent py-3 px-8 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
