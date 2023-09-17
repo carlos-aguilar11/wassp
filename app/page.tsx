@@ -4,7 +4,7 @@ import Welcome from './Welcome/Welcome'
 
 export default function Home() {
   return (
-    <main>
+    <main className="home-background">
       <Navbar />
       <Title />
       <Welcome />

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Welcome = () => {
   return (
     <main className="welcome-background">
-      <div className="overlay">
+      <div className="overlay-2">
         <div className="flex flex-col ml-1 md:ml-72 lg:ml-96 px-0 md:px-1 lg:px-8 pt-56 pb-52">
           <div className="my-0 lg:my-1 ml-3 lg:ml-6">
             <h1
