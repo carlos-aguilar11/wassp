@@ -57,10 +57,11 @@ body {
   background: linear-gradient(180deg, #052436 100%, #052436 100%);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .overlay {
   background-image: url('../public/Layers.svg');
-  background-position-y: -200px;
+  background-position-y: -235px;
   background-repeat: no-repeat;
 }
