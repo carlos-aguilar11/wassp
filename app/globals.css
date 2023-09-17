@@ -31,12 +31,6 @@ body {
   background-color: black;
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0); /* Initially transparent */
-  transition: background-color 0.3s ease; /* Smooth transition */
-  backdrop-filter: blur(0); /* No blur initially */
-  /* Other styling for your Navbar */
-}
 /*------------------------ BACKGROUNDS ------------------*/
 .home-background {
   background-image: linear-gradient(
@@ -44,8 +38,9 @@ body {
       rgba(5, 36, 54, 0.2) 10%,
       rgba(5, 36, 54, 0.4) 25%,
       rgba(5, 36, 54, 0.6) 50%,
-      rgba(5, 36, 54, 0.8) 70%,
-      rgba(5, 36, 54, 1) 90%,
+      rgba(5, 36, 54, 0.7) 70%,
+      rgba(5, 36, 54, 0.9) 90%,
+      rgb(5, 36, 54) 95%,
       #052436 100%
     ),
     url('../public/01.jpg');
@@ -57,7 +52,7 @@ body {
 .welcome-background {
   background: url('../public/Layers.svg'),
     linear-gradient(180deg, #052436 100%, #052436 100%);
-  background-size: cover;
+
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
