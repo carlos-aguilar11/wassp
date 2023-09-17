@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const Title = () => {
   return (
-    <div className="flex flex-col justify-between px-8 py-52 mt-2">
-      <div className="mb-4">
+    <div className="home-background flex flex-col justify-between px-8 pt-52 pb-8">
+      <div className="pt-2 mb-4">
         <h1 className="text-lg md:text-xl lg:text-2xl text-left mb-2.5">
           SEA IT ALL
         </h1>
@@ -12,8 +12,8 @@ const Title = () => {
           MULTIBEAM SONAR <br className="mb-2" /> PRODUCTS & SOLUTIONS.
         </h3>
       </div>
-      <div className="text-center pt-52 pb-0 md:text-left mt-6 md:mt-6 mb-0 md:mb-8 ml-0 md:ml-96 relative">
-        <div className="text-base ml-14">
+      <div className="text-center pt-52 md:text-left md:mt-1 mb-4 md:ml-96 relative">
+        <div className="ml-14">
           <div className="text-lg leading-tight">
             <p>
               WASSP multi-beam enables
