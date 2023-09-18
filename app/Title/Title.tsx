@@ -6,10 +6,10 @@ const Title = () => {
     <div className="overlay">
       <div className="flex flex-col justify-between px-8 pt-52 pb-8">
         <div className="mt-2 mb-4">
-          <h1 className="text-2xl text-left mb-1">SEA IT ALL</h1>
+          <h1 className="text-2xl text-left mb-3">SEA IT ALL</h1>
           <h3
-            className="text-6xl text-left mb-2.5 leading-tight"
-            style={{ width: '600px' }}
+            className="text-3xl md:text-5xl lg:text-6xl text-left mb-4"
+            style={{ maxWidth: '600px' }}
           >
             MULTIBEAM SONAR PRODUCTS & SOLUTIONS.
           </h3>
@@ -17,7 +17,7 @@ const Title = () => {
         <div className="text-center pt-44 md:text-left md:mt-7 mb-4 md:ml-96 relative">
           <div className="ml-14">
             <div className="leading-tight">
-              <div style={{ width: '220px', fontSize: '16px' }}>
+              <div style={{ width: '200px', fontSize: '16px' }}>
                 <p>
                   WASSP multi-beam enables sustainable fishing, exploration, and
                   surveys with versatility and detail.

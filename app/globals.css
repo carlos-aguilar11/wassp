@@ -11,7 +11,16 @@
 
 @font-face {
   font-family: 'Neue-haas-grotesk';
-  src: url('../public/Fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  src: url('https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
 }
 
 nav,
@@ -42,9 +51,8 @@ body {
       rgba(5, 36, 54, 0.2) 10%,
       rgba(5, 36, 54, 0.4) 25%,
       rgba(5, 36, 54, 0.6) 50%,
-      rgba(5, 36, 54, 0.7) 70%,
-      rgba(5, 36, 54, 0.9) 90%,
-      rgb(5, 36, 54, 1) 98%,
+      rgba(5, 36, 54, 0.7) 75%,
+      rgba(5, 36, 54, 0.9) 95%,
       #052436 100%
     ),
     url('../public/01.jpg');
@@ -54,7 +62,14 @@ body {
 }
 
 .welcome-background {
-  background: linear-gradient(180deg, #052436 100%, #052436 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(5, 36, 54, 0.5) 1%,
+    rgb(5, 36, 54, 0.8) 10%,
+    rgb(5, 36, 54, 1) 50%,
+    #052436 65%,
+    #052436 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,15 +78,33 @@ body {
 .overlay {
   background-image: url('../public/Layers.svg');
 
-  background-position-y: 515px;
+  background-position-y: 488px;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
 
 .overlay-2 {
   background-image: url('../public/Layers.svg');
-
+  background-position: left;
   background-position-y: -245px;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .home-background {
+    background-position: center;
+    background-size: cover;
+  }
+  .overlay {
+    background-size: cover;
+    background-position: absolute;
+    background-size: 115%;
+    background-position-y: 542px;
+  }
+
+  .overlay-2 {
+    background-size: 115%;
+    background-position-y: -115px;
+  }
 }
