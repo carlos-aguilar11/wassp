@@ -120,6 +120,28 @@ body {
   background-attachment: fixed;
 }
 
+.menu-background {
+  background: linear-gradient(
+    180deg,
+    rgb(5, 36, 54, 0.9) 1%,
+    rgb(5, 36, 54, 1) 15%,
+    rgb(5, 36, 54, 1.2) 25%,
+    rgb(5, 36, 54, 1.6) 35%,
+    #052436 65%,
+    #052436 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.overlay-3 {
+  background-image: url('../public/Layers2.svg');
+  background-position-y: 488px;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 768px) {
   .home-background {
     background-position: center;
