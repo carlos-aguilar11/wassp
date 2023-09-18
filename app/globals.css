@@ -44,6 +44,18 @@ body {
   background-color: black;
 }
 
+.logo {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 103px;
+    height: auto;
+  }
+}
+
 /*------------------------ BACKGROUNDS ------------------*/
 .home-background {
   background-image: linear-gradient(

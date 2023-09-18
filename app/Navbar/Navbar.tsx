@@ -20,8 +20,8 @@ const Navbar = () => {
         background: opacity.to((o) => 'rgba(255, 255, 255, ${o)'),
       }}
     >
-      <nav className="bg-transparent py-4 md:py-14 px-1 md:px-8 md:mx-0">
-        <div className="flex justify-between items-center">
+      <div className="flex text-sm justify-between pt-9 md:pt-14 mx-5 md:mx-10">
+        <div className="logo">
           <Image
             src="/Logo.svg"
             priority={true}
@@ -29,27 +29,29 @@ const Navbar = () => {
             width={201}
             height={36}
           />
-          <div className="flex items-center space-x-6">
-            <ul className="flex space-x-6">
-              <li>SEARCH</li>
-              <li>LOGIN</li>
+        </div>
+        <div className="flex items-center">
+          <ul className="flex space-x-4 md:space-x-8">
+            <li>SEARCH</li>
+            <li>LOGIN</li>
+            <span className="hidden sm:inline">
               <li className="flex items-center">
                 EN
                 <Image
+                  className="ml-2"
                   src="/ArrowDown.svg"
                   alt="Arrow Down"
                   width={20}
                   height={20}
                 />
               </li>
-            </ul>
-
-            <div>
+            </span>
+            <li>
               <Image src="/Menu.svg" alt="Menu" width={25} height={21} />
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </animated.nav>
   )
 }
