@@ -4,31 +4,31 @@ import Image from 'next/image'
 const Title = () => {
   return (
     <div className="overlay">
-      <div className="flex flex-col justify-between px-8 pt-52 pb-8">
-        <div className="mt-2 mb-4">
-          <h1 className="text-2xl text-left mb-3">SEA IT ALL</h1>
+      <div className="flex flex-col justify-between pl-4 md:pl-9 pt-36 md:pt-52 pb-8">
+        <div className="mt-2 mb-12 tracking-widest">
+          <h1 className="text-base md:text-2xl text-left">SEA IT ALL</h1>
           <h3
-            className="text-3xl md:text-5xl lg:text-6xl text-left mb-4"
-            style={{ maxWidth: '600px' }}
+            className="text-5xl lg:text-6xl leading-none lg:leading-tight text-left mb-4"
+            style={{
+              maxWidth: '675px',
+            }}
           >
-            MULTIBEAM SONAR PRODUCTS & SOLUTIONS.
+            MULTIBEAM SONAR PRODUCT & SOLUTIONS.
           </h3>
         </div>
-        <div className="text-center pt-44 md:text-left md:mt-7 mb-4 md:ml-96 relative">
-          <div className="ml-14">
-            <div className="leading-tight">
-              <div style={{ width: '200px', fontSize: '16px' }}>
-                <p>
-                  WASSP multi-beam enables sustainable fishing, exploration, and
-                  surveys with versatility and detail.
-                </p>
-              </div>
-            </div>
+
+        <div className="pt-52 lg:ml-96 lg:flex lg:space-x-40 xl:space-x-96">
+          <div style={{ width: '250px', fontSize: '16px' }}>
+            <p className="text-left leading-tight lg:pl-14 pb-6">
+              WASSP multi-beam enables sustainable fishing, exploration, and
+              surveys with versatility and detail.
+            </p>
           </div>
-          <div className="absolute bottom-2 right-10">
+
+          <div className="flex left-1 bottom-2 right-0 pt-2 lg:pl-20">
             <a
               href="#contact"
-              className="text-white bg-transparent py-3 px-8 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
+              className="text-white bg-transparent py-4 px-12 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
             >
               <span>Contact Us</span>
               <Image

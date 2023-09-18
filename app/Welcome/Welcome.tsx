@@ -5,9 +5,9 @@ const Welcome = () => {
   return (
     <main className="welcome-background">
       <div className="overlay-2">
-        <div className="flex flex-col ml-4 md:ml-72 lg:ml-96 md:px-1 lg:px-14 pt-36 md:pt-56 pb-52">
+        <div className="flex flex-col ml-4 md:ml-72 lg:ml-96 md:px-1 lg:px-14 pt-36 md:pt-56 pb-48">
           <h1
-            className="text-3xl md:text-5xl lg:text-6xl text-left leading-tight mr-4 md:mx-10 md:pl-18 lg:mt-6 mb-10"
+            className="text-3xl md:text-5xl lg:text-6xl text-left leading-tight mr-4 md:mx-10 md:pl-18 lg:mt-6 mb-6 lg:mb-10"
             style={{ maxWidth: '750px' }}
           >
             WELCOME TO THE WORLD OF WASSP MULTIBEAM
@@ -35,7 +35,7 @@ const Welcome = () => {
               </p>
               <div className="flex left-1 bottom-2 top-56 right-0 pt-10">
                 <a
-                  href="#contact"
+                  href="#story"
                   className="text-white bg-transparent py-4 px-8 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
                 >
                   <span>Our Story</span>

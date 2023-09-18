@@ -64,9 +64,10 @@ body {
 .welcome-background {
   background: linear-gradient(
     180deg,
-    rgb(5, 36, 54, 0.5) 1%,
-    rgb(5, 36, 54, 0.8) 10%,
-    rgb(5, 36, 54, 1) 50%,
+    rgb(5, 36, 54, 0.9) 1%,
+    rgb(5, 36, 54, 1) 15%,
+    rgb(5, 36, 54, 1.2) 25%,
+    rgb(5, 36, 54, 1.6) 35%,
     #052436 65%,
     #052436 100%
   );
@@ -77,7 +78,6 @@ body {
 
 .overlay {
   background-image: url('../public/Layers.svg');
-
   background-position-y: 488px;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ body {
   }
 
   .overlay-2 {
-    background-size: 115%;
+    background-size: 110%;
     background-position-y: -115px;
   }
 }
