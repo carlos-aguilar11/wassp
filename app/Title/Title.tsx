@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Title = () => {
   return (
-    <div className="overlay">
+    <main className="overlay">
       <div className="flex flex-col justify-between pl-4 md:pl-9 pt-36 md:pt-52 pb-8">
         <div className="mt-2 mb-12 tracking-widest">
           <h1 className="text-base md:text-2xl text-left">SEA IT ALL</h1>
@@ -41,7 +41,7 @@ const Title = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

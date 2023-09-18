@@ -25,6 +25,7 @@
 
 nav,
 h1,
+h2,
 h3 {
   font-family: 'Norwester';
 }
@@ -101,6 +102,22 @@ body {
   background-position-y: -245px;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
+}
+
+.series-background {
+  background-image: linear-gradient(
+      180deg,
+      rgba(5, 36, 54, 0.2) 10%,
+      rgba(5, 36, 54, 0.4) 25%,
+      rgba(5, 36, 54, 0.6) 50%,
+      rgba(5, 36, 54, 0.7) 75%,
+      rgba(5, 36, 54, 0.9) 95%,
+      #052436 100%
+    ),
+    url('../public/02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media (max-width: 768px) {
