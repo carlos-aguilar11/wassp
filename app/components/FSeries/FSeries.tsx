@@ -1,5 +1,5 @@
 import React from 'react'
-import LoadingBar from '../loadingbar/page'
+import LoadingBar from '../LoadingBar/LoadingBar'
 import Link from 'next/link'
 
 const FSeries = () => {

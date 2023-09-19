@@ -123,12 +123,13 @@ body {
 .menu-background {
   background: linear-gradient(
     180deg,
-    rgb(5, 36, 54, 0.9) 1%,
-    rgb(5, 36, 54, 1) 15%,
-    rgb(5, 36, 54, 1.2) 25%,
-    rgb(5, 36, 54, 1.6) 35%,
-    #052436 65%,
-    #052436 100%
+    rgb(5, 36, 54, 2) 15%,
+    #052436 20%,
+    #052233 40%,
+    #042030 60%,
+    #041e2d 80%,
+    #031a27 100%,
+    #021621 100%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,7 +138,7 @@ body {
 
 .overlay-3 {
   background-image: url('../public/Layers2.svg');
-  background-position-y: 488px;
+  background-position: center;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
@@ -151,7 +152,7 @@ body {
     background-size: cover;
     background-position: absolute;
     background-size: 115%;
-    background-position-y: 550px;
+    background-position-y: 598px;
   }
 
   .overlay-2 {
