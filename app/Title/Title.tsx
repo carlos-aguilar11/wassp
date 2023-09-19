@@ -25,7 +25,7 @@ const Title = () => {
             </p>
           </div>
 
-          <div className="flex left-1 bottom-2 top-56 right-0 py-5 lg:pl-20">
+          <div className="lg:flex items-center space-x-2 max-w-max">
             <a
               href="#contact"
               className="text-white text-sm bg-transparent py-4 px-10 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
