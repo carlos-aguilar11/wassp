@@ -5,7 +5,7 @@ const Menu = () => {
     <main className="menu-background">
       <div className="overlay-3"></div>
       <div className="pt-96"></div>
-      <h1>MULTIPLE</h1>
+      <h1>MATERIAL</h1>
     </main>
   )
 }

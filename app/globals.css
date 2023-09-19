@@ -158,4 +158,8 @@ body {
     background-size: 110%;
     background-position-y: -115px;
   }
+  .series-background {
+    background-position: center;
+    background-size: cover;
+  }
 }

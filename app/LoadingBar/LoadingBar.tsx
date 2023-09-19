@@ -30,12 +30,12 @@ function CustomLoadingBar() {
 
   return (
     <div>
-      <div className="text-xs p-norwester flex justify-between items-center w-48">
+      <div className="text-xs p-norwester flex justify-between items-center w-44">
         <div>{formatNumber(componentNumber + 1)}</div>
         <LinearProgress
           variant="determinate"
           value={progress}
-          style={{ width: '145px', height: '1px' }}
+          style={{ width: '140px', height: '1px' }}
         />
         <div>{formatNumber(componentNumber + 2)}</div>
       </div>
