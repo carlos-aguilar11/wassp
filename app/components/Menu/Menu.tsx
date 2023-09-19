@@ -16,8 +16,8 @@ const Menu = () => {
             </p>
           </div>
         </div>
+        <div className="pb-96"></div>
       </div>
-      <div className="pb-96"></div>
     </main>
   )
 }

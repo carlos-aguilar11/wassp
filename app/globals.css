@@ -107,12 +107,14 @@ body {
 .series-background {
   background-image: linear-gradient(
       180deg,
-      rgba(5, 36, 54, 0.2) 10%,
+      rgba(5, 36, 54, 0.2) 5%,
       rgba(5, 36, 54, 0.4) 25%,
-      rgba(5, 36, 54, 0.6) 50%,
-      rgba(5, 36, 54, 0.7) 75%,
-      rgba(5, 36, 54, 0.9) 95%,
-      #052436 100%
+      rgba(5, 36, 54, 0.6) 45%,
+      rgba(5, 36, 54, 0.7) 65%,
+      rgba(5, 36, 54, 1) 85%,
+      #052233 90%,
+      #052436 95%,
+      #042030 100%
     ),
     url('../public/02.jpg');
   background-size: cover;
@@ -123,12 +125,11 @@ body {
 .menu-background {
   background: linear-gradient(
     180deg,
-    rgb(5, 36, 54, 2) 15%,
-    #052436 20%,
-    #052233 40%,
-    #042030 60%,
-    #041e2d 80%,
-    #031a27 100%,
+    rgba(5, 36, 54, 0.2) 10%,
+    #052233 15%,
+    #042030 25%,
+    #041e2d 50%,
+    #031a27 75%,
     #021621 100%
   );
   background-size: cover;
@@ -139,6 +140,9 @@ body {
 .overlay-3 {
   background-image: url('../public/Layers2.svg');
   background-position: center;
+  background-position-x: 300px;
+  background-position-y: 400px;
+
   background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
