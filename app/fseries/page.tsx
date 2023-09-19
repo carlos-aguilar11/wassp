@@ -1,5 +1,5 @@
 import React from 'react'
-import LoadingBar from '../LoadingBar/LoadingBar'
+import LoadingBar from '../loadingbar/page'
 import Link from 'next/link'
 
 const FSeries = () => {
@@ -30,7 +30,7 @@ const FSeries = () => {
             single-beam systems.
           </p>
           <p className="text-xs md:text-sm">
-            <Link href="/shop"></Link>Explore Now
+            <Link href="/shop">Explore Now</Link>
           </p>
         </div>
       </div>

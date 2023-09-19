@@ -1,8 +1,8 @@
-import FSeries from './FSeries/FSeries'
-import Menu from './Menu/Menu'
-import Navbar from './Navbar/Navbar'
-import Title from './Title/Title'
-import Welcome from './Welcome/Welcome'
+import FSeries from './fseries/page'
+import Menu from './menu/page'
+import Navbar from './navbar/page'
+import Title from './title/page'
+import Welcome from './welcome/page'
 
 export default function Home() {
   return (
