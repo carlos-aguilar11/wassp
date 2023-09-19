@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 const Title = () => {
   return (
-    <main className="overlay">
+    <main className="home-background">
       <div className="flex flex-col justify-between pl-4 md:pl-9 pt-36 md:pt-52 pb-8">
         <div className="mt-2 mb-12 tracking-widest">
-          <h1 className="text-base md:text-2xl text-left">SEA IT ALL</h1>
+          <h1 className="text-base md:text-2xl text-left mb-2">SEA IT ALL</h1>
           <h3
             className="text-5xl lg:text-6xl leading-none lg:leading-tight text-left"
             style={{

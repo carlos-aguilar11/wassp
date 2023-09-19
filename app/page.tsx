@@ -6,8 +6,9 @@ import Welcome from './components/Welcome/Welcome'
 
 export default function Home() {
   return (
-    <main className="home-background">
+    <main>
       <Navbar />
+
       <Title />
       <Welcome />
       <FSeries />
