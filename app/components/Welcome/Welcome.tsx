@@ -32,10 +32,10 @@ const Welcome = () => {
               real-time 3D charts, map fish in water, and make better decisions
               with the user-friendly advanced mode.
             </p>
-            <div className="flex left-1 bottom-2 top-56 right-0 pt-10">
+            <div className="flex left-1 bottom-2 top-56 right-0 pt-12">
               <a
                 href="#story"
-                className="text-white bg-transparent py-4 px-8 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
+                className="text-white bg-transparent py-4 px-10 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
               >
                 <span>Our Story</span>
                 <Image
