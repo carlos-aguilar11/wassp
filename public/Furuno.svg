@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded rectangle border -->
+  <rect x="10" y="10" width="180" height="80" rx="15" ry="15" fill="none" stroke="white" stroke-width="4" />
+
+  <!-- Import the Audiowide font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+  </style>
+
+  <!-- FURUNO text with Audiowide font -->
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Audiowide, Arial, sans-serif" font-size="24" fill="white">FURUNO</text>
+  
+  <!-- Product Solutions text with Audiowide font -->
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-family="Audiowide, Arial, sans-serif" font-size="16" fill="white">Product Solutions
+
+
+
+ 
+</body>
+</html>

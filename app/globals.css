@@ -49,63 +49,6 @@ body {
   background-color: black;
 }
 
-.logo {
-  width: auto;
-  height: auto;
-}
-
-/* Scrollable container */
-.scrollable-menu {
-  display: flex;
-  overflow-x: auto;
-  max-width: 100%;
-  white-space: nowrap;
-}
-
-/* Buttons */
-.menu-buttons {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.menu-button {
-  flex: 0 0 auto;
-  text-align: center;
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #fff;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-.active-button {
-  background-color: #fff;
-  color: #0074e4;
-}
-
-/* Explanation */
-.explanation {
-  padding: 20px;
-}
-
-.explanation-content {
-  text-align: center;
-}
-
-.number {
-  font-size: 24px;
-}
-
-.title {
-  font-size: 36px;
-  margin: 10px 0;
-}
-
-.explanation {
-  font-size: 18px;
-}
-
 /*------------------------ BACKGROUNDS ------------------*/
 .home-background {
   background-image: linear-gradient(
