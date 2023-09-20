@@ -94,7 +94,7 @@ body {
 }
 
 .menu-background {
-  background: linear-gradient(to bottom, #03121c 0%, rgba(3, 24, 42, 1) 100%);
+  background: linear-gradient(to bottom, #03121c 0%, rgb(3, 22, 40) 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -111,7 +111,10 @@ body {
 }
 
 .testimonial-background {
-  background: linear-gradient(to bottom, #03121c 0%, rgba(3, 24, 42, 1) 100%);
+  background-image: linear-gradient(45deg, rgb(3, 22, 40) 50%, transparent 100%),
+    linear-gradient(10deg, rgb(7, 32, 55) 50%, transparent 100%),
+    linear-gradient(145deg, rgb(1, 12, 21) 80%, transparent 100%),
+    linear-gradient(65deg, rgb(1, 5, 9) 100%, transparent 65%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
