@@ -27,15 +27,7 @@ const Menu = () => {
             </p>
           </div>
           <div className="">
-            {/* Wrap the buttons in a scrollable container */}
-            <div
-              className="flex flex-wrap items-center max-w-[900px] pb-6"
-              style={{
-                overflowX: 'auto',
-                maxWidth: '100%',
-                whiteSpace: 'nowrap',
-              }}
-            >
+            <div className="flex flex-row md:flex-wrap items-center pb-6 overflow-x-auto whitespace-nowrap max-w-max">
               {data.map((item: featureExplanations) => (
                 <button
                   key={item.id}
@@ -46,10 +38,24 @@ const Menu = () => {
                       : ''
                   }`}
                 >
-                  <span className="p-norwester">
+                  <span
+                    className={`p-norwester ${
+                      buttonClicked === item.number
+                        ? 'text-blue-950'
+                        : 'text-white'
+                    }`}
+                  >
                     {formatNumber(item.number)}
                   </span>
-                  <span className="p-neue">{item.title}</span>
+                  <span
+                    className={`p-neue ${
+                      buttonClicked === item.number
+                        ? 'text-blue-950'
+                        : 'text-white'
+                    }`}
+                  >
+                    {item.title}
+                  </span>
                 </button>
               ))}
             </div>
