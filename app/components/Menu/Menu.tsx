@@ -21,14 +21,21 @@ const Menu = () => {
           <div className="flex space-x-24 mr-24 mb-8 lg:mb-0">
             <p className="text-xs p-norwester">03</p>
             <p
-              className="text-xs md:text-sm p-norwester"
+              className="text-xs md:text-sm p-norwester hidden sm:block"
               style={{ marginRight: '1rem' }}
             >
               FEATURES
             </p>
+
+            <p
+              className="text-xs md:text-sm p-norwester block sm:hidden"
+              style={{ marginRight: '1rem' }}
+            >
+              OUR CAPABILITIES
+            </p>
           </div>
           <div>
-            <div className="flex flex-row md:flex-wrap items-center pb-5 overflow-x-auto whitespace-nowrap max-w-max">
+            <div className="flex flex-row md:flex-wrap items-center pb-4 overflow-x-auto whitespace-nowrap max-w-max">
               {data.map((item: featureExplanations) => (
                 <button
                   key={item.id}
@@ -63,7 +70,7 @@ const Menu = () => {
 
             {/* Display the explanation when a button is clicked */}
             {buttonClicked !== null && (
-              <div className="flex flex-col space-y-6 pb-60 lg:pb-72 max-w-[700px] pr-4">
+              <div className="flex flex-col space-y-6 pb-36 lg:pb-72 max-w-[700px] pr-4">
                 <p className="text-base md:text-2xl pb-3">
                   {formatNumber(buttonClicked)}
                 </p>

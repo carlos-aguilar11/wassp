@@ -110,6 +110,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.testimonial-background {
+  background: linear-gradient(to bottom, #03121c 0%, rgba(3, 24, 42, 1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /*------------------------ MEDIA Q ------------------*/
 
 @media (max-width: 768px) {

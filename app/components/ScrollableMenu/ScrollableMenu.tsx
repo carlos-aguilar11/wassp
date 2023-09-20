@@ -5,11 +5,10 @@ import Image from 'next/image'
 const ScrollableMenu = () => {
   const scrollContainer = useRef<HTMLDivElement | null>(null)
 
-  const duplicateItems = [...menudata, ...menudata] // Duplicate the menu items
+  const duplicateItems = [...menudata, ...menudata]
 
   const handleScroll = (e: SyntheticEvent<HTMLDivElement, Event>) => {
     if (scrollContainer.current) {
-      // Check if the user scrolls past the duplicated items and reset the scroll position
       if (
         e.currentTarget.scrollLeft >=
         scrollContainer.current.scrollWidth / 2
@@ -20,11 +19,18 @@ const ScrollableMenu = () => {
   }
 
   return (
-    <div className="border-t-2 border-t-white border-b-2 border-b-white py-8 px-1">
+    <div className="relative" style={{ overflowX: 'hidden' }}>
       <div
         className="overflow-x-auto whitespace-nowrap"
         ref={scrollContainer}
         onScroll={handleScroll}
+        style={{
+          position: 'relative',
+          borderTopWidth: '1px',
+          borderBottomWidth: '1px',
+          paddingBottom: '18px',
+          paddingTop: '36px',
+        }}
       >
         {duplicateItems.map((item) => (
           <div key={item.id} className="inline-flex items-center ml-4 min-w-0">
