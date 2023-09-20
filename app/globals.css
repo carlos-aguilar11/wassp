@@ -38,6 +38,10 @@ a {
 .p-norwester {
   font-family: 'Norwester';
 }
+
+.p-neue {
+  font-family: 'Neue-haas-grotesk';
+}
 /*------------------------ GENERAL ------------------*/
 
 body {
@@ -80,11 +84,7 @@ body {
 }
 
 .welcome-background {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(5, 33, 51, 1) 0%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
+  background-image: linear-gradient(to bottom, #052133 0%, #051e2e 100%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -102,15 +102,7 @@ body {
 }
 
 .menu-background {
-  background: linear-gradient(
-    180deg,
-    rgba(5, 36, 54, 0.2) 10%,
-    #052233 15%,
-    #042030 25%,
-    #041e2d 50%,
-    #031a27 75%,
-    #021621 100%
-  );
+  background: linear-gradient(to bottom, #03121c 0%, rgba(3, 24, 42, 1) 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -119,8 +111,8 @@ body {
 .overlay-2 {
   background-image: url('../public/Layers2.svg');
   background-position: center;
-  background-position-x: 300px;
-  background-position-y: 400px;
+  background-position-x: 230px;
+  background-position-y: 470px;
 
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -168,14 +160,3 @@ body {
     }
   }
 }
-
-/* rgba(0, 0, 0, 0.1)
-rgba(1, 7, 10, 0.2)
-rgba(2, 14, 20, 0.3)
-rgba(3, 21, 30, 0.4)
-rgba(4, 28, 40, 0.5)
-rgba(5, 35, 50, 0.6)
-rgba(6, 42, 60, 0.7)
-rgba(7, 49, 70, 0.8)
-rgba(8, 56, 80, 0.9)
-rgba(5, 33, 51, 1) */
