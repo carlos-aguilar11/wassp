@@ -1,5 +1,6 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+
+import React, { useState } from 'react'
 import data, { featureExplanations } from './data'
 
 const Menu = () => {
@@ -8,7 +9,9 @@ const Menu = () => {
   const handleButtonClick = (buttonNumber: number) => {
     setButtonClicked(buttonNumber)
   }
+
   const formatNumber = (num: number) => (num < 10 ? `0${num}` : num)
+
   return (
     <main className="menu-background">
       <div className="overlay-2">
@@ -23,15 +26,23 @@ const Menu = () => {
               FEATURES
             </p>
           </div>
-          <div>
-            <div className="flex flex-wrap items-center max-w-[900px] pb-6">
+          <div className="">
+            {/* Wrap the buttons in a scrollable container */}
+            <div
+              className="flex flex-wrap items-center max-w-[900px] pb-6"
+              style={{
+                overflowX: 'auto',
+                maxWidth: '100%',
+                whiteSpace: 'nowrap',
+              }}
+            >
               {data.map((item: featureExplanations) => (
                 <button
                   key={item.id}
                   onClick={() => handleButtonClick(item.number)}
-                  className={`text-white text-sm bg-transparent py-2 px-9 rounded-full border border-white hover:bg-white hover:text-blue-900 flex items-center space-x-2 mb-3 mr-4 ${
+                  className={`text-white text-sm bg-transparent py-2 px-9 rounded-full border border-white hover:text-blue-950  hover:bg-white flex items-center space-x-2 mb-3 mr-4 ${
                     buttonClicked === item.number
-                      ? 'bg-white text-blue-900'
+                      ? ' text-blue-950 bg-white'
                       : ''
                   }`}
                 >
