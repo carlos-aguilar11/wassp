@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import data, { featureExplanations } from './data'
+import ScrollableMenu from '../ScrollableMenu/ScrollableMenu'
 
 const Menu = () => {
   const [buttonClicked, setButtonClicked] = useState<number>(1)
@@ -27,12 +28,12 @@ const Menu = () => {
             </p>
           </div>
           <div>
-            <div className="flex flex-row md:flex-wrap items-center pb-6 overflow-x-auto whitespace-nowrap max-w-max">
+            <div className="flex flex-row md:flex-wrap items-center pb-5 overflow-x-auto whitespace-nowrap max-w-max">
               {data.map((item: featureExplanations) => (
                 <button
                   key={item.id}
                   onClick={() => handleButtonClick(item.number)}
-                  className={`text-white text-sm bg-transparent py-2 px-9 rounded-full border border-white hover:text-blue-950  hover:bg-white flex items-center space-x-2 mb-3 mr-4 ${
+                  className={`text-white text-sm bg-transparent py-2 px-9 rounded-full border border-white hover:text-blue-950  hover:bg-white flex items-center space-x-2 mb-2 mr-4 ${
                     buttonClicked === item.number
                       ? ' text-blue-950 bg-white'
                       : ''
@@ -62,7 +63,7 @@ const Menu = () => {
 
             {/* Display the explanation when a button is clicked */}
             {buttonClicked !== null && (
-              <div className="flex flex-col space-y-6 pb-72 max-w-[700px] pr-4">
+              <div className="flex flex-col space-y-6 pb-60 lg:pb-72 max-w-[700px] pr-4">
                 <p className="text-base md:text-2xl pb-3">
                   {formatNumber(buttonClicked)}
                 </p>
@@ -79,6 +80,7 @@ const Menu = () => {
             )}
           </div>
         </div>
+        <ScrollableMenu />
       </div>
     </main>
   )

@@ -49,6 +49,10 @@ body {
   background-color: black;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 /*------------------------ BACKGROUNDS ------------------*/
 .home-background {
   background-image: linear-gradient(
@@ -135,7 +139,7 @@ body {
 
   .overlay-2 {
     background-size: 100%;
-    background-position-y: 270px;
+    background-position-y: 300px;
     background-position-x: 0px;
   }
   .series-background {

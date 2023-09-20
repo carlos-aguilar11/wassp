@@ -9,12 +9,10 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-
       <Title />
       <Welcome />
       <FSeries />
       <Menu />
-      <ScrollableMenu />
     </main>
   )
 }
