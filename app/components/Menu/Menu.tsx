@@ -15,9 +15,9 @@ const Menu = () => {
   return (
     <main className="menu-background">
       <div className="overlay-2">
-        <div className="pt-32 md:pt-60"></div>
+        <div className="pt-16 md:pt-32 lg:pt-60"></div>
         <div className="text-left lg:flex lg:space-y-3 xl:space-x-32 pl-4 md:pl-9">
-          <div className="flex space-x-24 mr-24 mb-5 lg:mb-0">
+          <div className="flex space-x-24 mr-24 mb-8 lg:mb-0">
             <p className="text-xs p-norwester">03</p>
             <p
               className="text-xs md:text-sm p-norwester"
@@ -26,7 +26,7 @@ const Menu = () => {
               FEATURES
             </p>
           </div>
-          <div className="">
+          <div>
             <div className="flex flex-row md:flex-wrap items-center pb-6 overflow-x-auto whitespace-nowrap max-w-max">
               {data.map((item: featureExplanations) => (
                 <button
@@ -62,7 +62,7 @@ const Menu = () => {
 
             {/* Display the explanation when a button is clicked */}
             {buttonClicked !== null && (
-              <div className="flex flex-col space-y-6 pb-72 max-w-[700px]">
+              <div className="flex flex-col space-y-6 pb-72 max-w-[700px] pr-4">
                 <p className="text-base md:text-2xl pb-3">
                   {formatNumber(buttonClicked)}
                 </p>

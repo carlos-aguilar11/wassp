@@ -20,7 +20,7 @@ const Navbar = () => {
         background: opacity.to((o) => 'rgba(255, 255, 255, ${o)'),
       }}
     >
-      <div className="flex text-sm justify-between pt-9 md:pt-14 mx-5 md:mx-10">
+      <div className="flex text-xs sm:text-sm justify-between pt-9 md:pt-14 mx-5 md:mx-10">
         <div className="logo">
           <Image
             src="/Logo.svg"
@@ -47,7 +47,13 @@ const Navbar = () => {
               </li>
             </span>
             <li>
-              <Image src="/Menu.svg" alt="Menu" width={25} height={21} />
+              <Image
+                className="menu"
+                src="/Menu.svg"
+                alt="Menu"
+                width={25}
+                height={21}
+              />
             </li>
           </ul>
         </div>

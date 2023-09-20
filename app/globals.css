@@ -179,15 +179,21 @@ body {
       transform: scale(0.5);
       transform-origin: top left;
     }
-    .logo {
-      width: 103px;
-      height: auto;
-    }
+  }
+  .logo {
+    width: 103px;
+    height: auto;
+  }
+
+  .menu {
+    width: 18px;
+    height: auto;
   }
 
   .overlay-2 {
-    background-size: 110%;
-    background-position-y: -115px;
+    background-size: 100%;
+    background-position-y: 270px;
+    background-position-x: 0px;
   }
   .series-background {
     background-position: center;
