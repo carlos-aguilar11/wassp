@@ -118,6 +118,22 @@ body {
   background-repeat: no-repeat;
 }
 
+/*------------------------ MEDIA Q ------------------*/
+
+@media (max-width: 1100px) {
+  .flex-wrap-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 1rem; /* Adjust the gap as needed */
+  }
+
+  .scroll-button {
+    min-width: auto; /* Adjust the button width as needed */
+  }
+}
+
 @media (max-width: 768px) {
   .home-background {
     background-position: center;
