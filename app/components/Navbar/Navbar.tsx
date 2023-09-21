@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <animated.nav
       style={{
-        position: 'fixed',
+        position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
@@ -20,7 +20,7 @@ const Navbar = () => {
         background: opacity.to((o) => 'rgba(255, 255, 255, ${o)'),
       }}
     >
-      <div className="flex text-xs sm:text-sm justify-between pt-9 md:pt-14 mx-5 md:mx-10">
+      <div className="flex text-xs sm:text-sm justify-between pt-9 md:pt-14 px-5 md:px-10">
         <div className="logo">
           <Image
             src="/Logo.svg"

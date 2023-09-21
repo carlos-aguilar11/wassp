@@ -1,5 +1,6 @@
 import React from 'react'
-import LoadingBar from '../LoadingBar/LoadingBar'
+
+import CustomLoadingBar from '../LoadingBar/LoadingBar'
 
 const FSeries = () => {
   return (
@@ -8,7 +9,7 @@ const FSeries = () => {
       <div className="md:flex md:justify-between pt-6 md:pt-96 md:pb-6">
         <div className="ml-4 md:ml-9 space-y-4 pb-72 md:pb-0">
           <div className="mb-5 hidden md:block">
-            <LoadingBar />
+            <CustomLoadingBar id={2} />
           </div>
           <h1 className="text-xs hidden md:inline">(FISHING SERIES)</h1>
           <h2
@@ -18,7 +19,7 @@ const FSeries = () => {
             F - SERIES
           </h2>
           <div className="mb-5 md:hidden">
-            <LoadingBar />
+            <CustomLoadingBar id={1} />
           </div>
         </div>
 

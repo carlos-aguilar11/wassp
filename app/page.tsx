@@ -1,4 +1,5 @@
 import FSeries from './components/FSeries/FSeries'
+import Footer from './components/Footer/Footer'
 import Menu from './components/Menu/Menu'
 import Navbar from './components/Navbar/Navbar'
 import News from './components/News/News'
@@ -16,6 +17,7 @@ export default function Home() {
       <Menu />
       <Testimonial />
       <News />
+      <Footer />
     </main>
   )
 }

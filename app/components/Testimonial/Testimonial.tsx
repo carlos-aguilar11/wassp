@@ -64,7 +64,7 @@ const Testimonial = () => {
           }}
         >
           {/*Text*/}
-          <div className="pt-16 md:pt-32 lg:pt-60">
+          <div className="pt-32 md:pt-44 lg:pt-60">
             <div className="text-left lg:flex lg:space-y-3 xl:space-x-32 pl-4 md:pl-9 md:pb-40">
               <div className="flex space-x-24 mr-24 mb-8 lg:mb-0">
                 <p className="text-xs p-norwester">04</p>
