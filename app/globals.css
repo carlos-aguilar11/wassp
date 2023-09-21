@@ -120,7 +120,6 @@ body {
   background-position-x: 230px;
   background-position-y: 470px;
 
-  background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
 
@@ -151,14 +150,15 @@ body {
     height: auto;
   }
 
-  .overlay-2 {
-    background-size: 100%;
-    background-position-y: 300px;
-    background-position-x: 0px;
-  }
   .series-background {
     background-position: center;
     background-size: cover;
+  }
+
+  .overlay-2 {
+    background-position: center;
+    background-position-x: 110px;
+    background-position-y: 230px;
   }
 }
 
@@ -176,5 +176,10 @@ body {
       transform: scale(0.45);
       transform-origin: top left;
     }
+  }
+  .overlay-2 {
+    background-size: 100%;
+    background-position-y: 300px;
+    background-position-x: 0px;
   }
 }

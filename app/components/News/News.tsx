@@ -2,6 +2,7 @@
 import React, { SyntheticEvent, useEffect, useRef, useState } from 'react'
 import photodata from './photodata'
 import Image from 'next/image'
+import newsdata from './newsdata'
 
 const News = () => {
   const scrollContainer1 = useRef<HTMLDivElement | null>(null)
@@ -49,13 +50,13 @@ const News = () => {
           </div>
 
           <div
-            className="relative max-h-[100px]"
+            className="relative"
             style={{
               overflowX: 'hidden',
             }}
           >
             <div
-              className="overflow-x-auto whitespace-nowrap"
+              className="overflow-x-auto whitespace-nowrap md:pt-14"
               ref={scrollContainer1}
               onScroll={handleScroll}
             >
@@ -66,7 +67,7 @@ const News = () => {
                   style={{ maxHeight: '100px', maxWidth: '100px' }}
                 >
                   <div className="flex space-x-6">
-                    <div>
+                    <div className="">
                       <Image
                         src={item.url}
                         alt={item.name}
@@ -78,7 +79,6 @@ const News = () => {
                 </div>
               ))}
             </div>
-
             <div />
           </div>
         </div>

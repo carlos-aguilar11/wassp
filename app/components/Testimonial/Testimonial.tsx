@@ -56,7 +56,7 @@ const Testimonial = () => {
 
         {/* Color Overlay */}
         <div
-          className="relative top-0 left-0 w-full h-full z-10"
+          className="relative top-1 left-0 w-full h-full z-10"
           style={{
             backgroundImage: `linear-gradient(to top, #010d14 20%, transparent 80%),
             linear-gradient(225deg, rgba(5, 33, 51, 1) 0%, #010d14 0%, transparent 80%),
