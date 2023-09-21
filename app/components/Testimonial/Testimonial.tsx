@@ -64,33 +64,43 @@ const Testimonial = () => {
           }}
         >
           {/*Text*/}
-          <div className="pt-16 md:pt-32 lg:pt-60"></div>
-          <div className="text-left lg:flex lg:space-y-3 xl:space-x-32 pl-4 md:pl-9 pb-32">
-            <div className="flex space-x-24 mr-24 mb-8 lg:mb-0">
-              <p className="text-xs p-norwester">04</p>
-              <p
-                className="text-xs md:text-sm p-norwester"
-                style={{ marginRight: '1rem' }}
-              >
-                TESTIMONIALS
-              </p>
-            </div>
-            <div className="flex items-center max-w-max">
-              {trail.map((style, index) => (
-                <animated.div key={index} className="pr-7 pl-4" style={style}>
-                  <div style={{ height: '380px' }}>
-                    <h1 className="p-norwester text-3xl sm:text-6xl xl:leading-tight mb-8">
-                      {textdata[(currentIndex + index) % textdata.length].text}
-                    </h1>
-                    <p className="text-white text-base">
-                      {textdata[(currentIndex + index) % textdata.length].name}
-                    </p>
-                    <p className="text-white text-base">
-                      {textdata[(currentIndex + index) % textdata.length].role}
-                    </p>
-                  </div>
-                </animated.div>
-              ))}
+          <div className="pt-16 md:pt-32 lg:pt-60">
+            <div className="text-left lg:flex lg:space-y-3 xl:space-x-32 pl-4 md:pl-9 md:pb-40">
+              <div className="flex space-x-24 mr-24 mb-8 lg:mb-0">
+                <p className="text-xs p-norwester">04</p>
+                <p
+                  className="text-xs md:text-sm p-norwester"
+                  style={{ marginRight: '1rem' }}
+                >
+                  TESTIMONIALS
+                </p>
+              </div>
+              <div className="flex items-center max-w-max">
+                {trail.map((style, index) => (
+                  <animated.div key={index} className="pr-7 pl-4" style={style}>
+                    <div style={{ height: '380px' }}>
+                      <h1 className="p-norwester text-3xl md:text-6xl xl:leading-tight mb-8">
+                        {
+                          textdata[(currentIndex + index) % textdata.length]
+                            .text
+                        }
+                      </h1>
+                      <p className="text-white text-base">
+                        {
+                          textdata[(currentIndex + index) % textdata.length]
+                            .name
+                        }
+                      </p>
+                      <p className="text-white text-base">
+                        {
+                          textdata[(currentIndex + index) % textdata.length]
+                            .role
+                        }
+                      </p>
+                    </div>
+                  </animated.div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -101,7 +101,14 @@ body {
 }
 
 .news-background {
-  background: linear-gradient(to bottom, #020d14 0%, rgb(1, 9, 16) 100%);
+  background: linear-gradient(to bottom, #010d14 0%, #010d14 100%),
+    linear-gradient(225deg, rgb(3, 25, 39) 30%, #010d14 20%, transparent 100%),
+    linear-gradient(
+      45deg,
+      rgba(5, 33, 51, 1) 50%,
+      rgba(0, 0, 0, 0.9) 30%,
+      transparent 100%
+    );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
