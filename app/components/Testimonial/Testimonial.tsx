@@ -11,7 +11,7 @@ const Testimonial = () => {
   const setPlayback = () => {
     const currentVideo = videoRef.current
     if (currentVideo) {
-      currentVideo.playbackRate = 0.4
+      currentVideo.playbackRate = 1
     }
   }
 
@@ -58,9 +58,9 @@ const Testimonial = () => {
         <div
           className="relative top-0 left-0 w-full h-full z-10"
           style={{
-            backgroundImage: `linear-gradient(to bottom, #020d15 0%, transparent 100%),
-            linear-gradient(225deg, rgba(1, 8, 14, 0.7) 0%, #020d15 10%, transparent 100%),
-            linear-gradient(45deg, rgba(1, 8, 14, 0.7) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)`,
+            backgroundImage: `linear-gradient(to top, #010d14 20%, transparent 80%),
+            linear-gradient(225deg, rgba(5, 33, 51, 1) 0%, #010d14 0%, transparent 80%),
+            linear-gradient(45deg, rgba(5, 33, 51, 1) 0%, rgba(0, 0, 0, 0.9) 30%, transparent 100%)`,
           }}
         >
           {/*Text*/}

@@ -45,7 +45,7 @@ const ScrollableMenu = () => {
                     height={13}
                   />
                 </div>
-                <div className="p-norwester text-white text-2xl md:text-6xl px-4 py-2 whitespace-nowrap">
+                <div className="p-norwester text-white text-2xl md:text-6xl px-4 py-2 whitespace-nowrap lg:tracking-wide">
                   {item.name}
                 </div>
               </div>
