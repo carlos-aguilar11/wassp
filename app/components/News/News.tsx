@@ -48,34 +48,37 @@ const News = () => {
             </div>
           </div>
 
-          <div className="relative" style={{ overflowX: 'hidden' }}>
+          <div
+            className="relative max-h-[100px]"
+            style={{
+              overflowX: 'hidden',
+            }}
+          >
             <div
-              className="overflow-x-auto whitespace-nowrap py-6"
+              className="overflow-x-auto whitespace-nowrap"
               ref={scrollContainer1}
               onScroll={handleScroll}
             >
               {duplicateItems.map((item, index) => (
                 <div
                   key={index}
-                  className="inline-flex items-center ml-4 min-w-0"
-                  style={{ minWidth: '100px', minHeight: '30px' }}
+                  className="inline-flex ml-4 min-w-0"
+                  style={{ maxHeight: '100px', maxWidth: '100px' }}
                 >
-                  <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    <div className="flex items-center space-x-6">
-                      <div>
-                        <Image
-                          src={item.url}
-                          alt={item.name}
-                          width={100}
-                          height={30}
-                          layout="fixed"
-                        />
-                      </div>
+                  <div className="flex space-x-6">
+                    <div>
+                      <Image
+                        src={item.url}
+                        alt={item.name}
+                        width={242}
+                        height={242}
+                      />
                     </div>
-                  </a>
+                  </div>
                 </div>
               ))}
             </div>
+
             <div />
           </div>
         </div>
