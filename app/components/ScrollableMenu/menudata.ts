@@ -1,4 +1,3 @@
-'use-client'
 export interface companies {
   id: number
   name: string

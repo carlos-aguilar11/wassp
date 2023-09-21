@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState } from 'react'
 import data, { featureExplanations } from './data'
 import ScrollableMenu from '../ScrollableMenu/ScrollableMenu'
