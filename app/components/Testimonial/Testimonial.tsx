@@ -16,10 +16,9 @@ const Testimonial = () => {
   }
 
   useEffect(() => {
-    // Add a delay before showing testimonials
     const delay = setTimeout(() => {
       setShowTestimonials(true)
-    }, 1000) // Adjust the delay as needed
+    }, 1000)
 
     return () => clearTimeout(delay)
   }, [])
@@ -29,13 +28,13 @@ const Testimonial = () => {
     transform: showTestimonials ? 'translateY(0)' : 'translateY(50px)',
     from: { opacity: 0, transform: 'translateY(50px)' },
     config: { tension: 350, friction: 20 },
-    delay: 200, // Adjust the delay between each testimonial
+    delay: 200,
   })
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % textdata.length)
-    }, 5000) // Adjust the interval for changing testimonials
+    }, 5000)
 
     return () => clearInterval(interval)
   }, [])
@@ -53,7 +52,6 @@ const Testimonial = () => {
           onCanPlay={() => setPlayback()}
         >
           <source src="/turtle.mp4" type="video/mp4" />
-          {/* Add additional source elements for other video formats if needed */}
         </video>
 
         {/* Color Overlay */}
@@ -79,21 +77,22 @@ const Testimonial = () => {
             </div>
             <div className="flex items-center max-w-max">
               {trail.map((style, index) => (
-                <animated.div key={index} className="mx-4" style={style}>
-                  <h1 className="p-norwester leading-snug text-3xl sm:text-6xl mb-8">
-                    {textdata[(currentIndex + index) % textdata.length].text}
-                  </h1>
-                  <p className="text-white text-base">
-                    {textdata[(currentIndex + index) % textdata.length].name}
-                  </p>
-                  <p className="text-white text-base">
-                    {textdata[(currentIndex + index) % textdata.length].role}
-                  </p>
+                <animated.div key={index} className="pr-7 pl-4" style={style}>
+                  <div style={{ height: '380px' }}>
+                    <h1 className="p-norwester text-3xl sm:text-6xl xl:leading-tight mb-8">
+                      {textdata[(currentIndex + index) % textdata.length].text}
+                    </h1>
+                    <p className="text-white text-base">
+                      {textdata[(currentIndex + index) % textdata.length].name}
+                    </p>
+                    <p className="text-white text-base">
+                      {textdata[(currentIndex + index) % textdata.length].role}
+                    </p>
+                  </div>
                 </animated.div>
               ))}
             </div>
           </div>
-          <div className="pt-48"></div>
         </div>
       </div>
     </main>

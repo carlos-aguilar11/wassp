@@ -100,6 +100,13 @@ body {
   background-attachment: fixed;
 }
 
+.news-background {
+  background: linear-gradient(to bottom, #020d14 0%, rgb(1, 9, 16) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .overlay-2 {
   background-image: url('../public/Layers2.svg');
   background-position: center;

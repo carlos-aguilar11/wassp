@@ -1,3 +1,4 @@
+'use client'
 import React, { useRef, SyntheticEvent } from 'react'
 import menudata from './menudata'
 import Image from 'next/image'
@@ -32,8 +33,8 @@ const ScrollableMenu = () => {
           paddingTop: '36px',
         }}
       >
-        {duplicateItems.map((item) => (
-          <div key={item.id} className="inline-flex items-center ml-4 min-w-0">
+        {duplicateItems.map((item, index) => (
+          <div key={index} className="inline-flex items-center ml-4 min-w-0">
             <a href={item.url} target="_blank" rel="noopener noreferrer">
               <div className="flex items-center space-x-6">
                 <div className="rounded-full border border-white p-2">
