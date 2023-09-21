@@ -124,14 +124,11 @@ body {
 }
 
 .footer-background {
-  background: linear-gradient(to bottom, #010d14 0%, #010d14 100%),
-    linear-gradient(225deg, rgb(3, 25, 39) 30%, #0d3145 20%, transparent 100%),
-    linear-gradient(
-      45deg,
-      rgba(5, 33, 51, 1) 50%,
-
-      transparent 100%
-    );
+  background: linear-gradient(to bottom, #010d14 0%, #010e15 100%),
+    linear-gradient(225deg, rgb(4, 16, 24) 30%, #051822 20%, transparent 100%),
+    linear-gradient(45deg, rgb(0, 27, 40) 50%, transparent 100%),
+    linear-gradient(to bottom, rgb(8, 8, 8) 30%, #ced3d5 80%, transparent 30%),
+    url('../public/02.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

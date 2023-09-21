@@ -4,9 +4,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <main>
-      <div className="pt-72 flex-row space-x-20">
-        <div className="flex space-y-36">
+    <main className="footer-background">
+      <div className="pt-72 pl-4 md:pl-16 flex space-x-52">
+        <div className="flex-row space-y-12">
           <p>TEXT WOULD BE HERE!</p>
           <p className="lg:flex space-x-2 max-w-max">
             <a
@@ -22,9 +22,9 @@ const Footer = () => {
               />
             </a>
           </p>
-          <p></p>
+          <p>Suscribe to our Newsletter</p>
         </div>
-        <div>
+        <div className="pl-36">
           <ul>
             <li>Home</li>
             <li>Products</li>
@@ -39,7 +39,14 @@ const Footer = () => {
             <li>Youtube</li>
           </ul>
         </div>
-        <div></div>
+        <div className="space-y-32">
+          <ul>
+            <li>Offices</li>
+            <li>Auckland-NZ</li>
+            <li>Essex-UK</li>
+          </ul>
+          <p className="bottom right">©2023 WASSP</p>
+        </div>
       </div>
       <div className="pt-96">
         <Image
