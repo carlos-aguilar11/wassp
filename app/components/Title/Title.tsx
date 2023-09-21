@@ -17,7 +17,7 @@ const Title = () => {
           </h3>
         </div>
 
-        <div className="pt-44 lg:ml-96 lg:flex lg:space-x-40 xl:space-x-96">
+        <div className="pt-44 lg:pl-96 lg:flex lg:space-x-40 xl:space-x-96">
           <div style={{ width: '250px', fontSize: '16px' }}>
             <p className="text-left leading-tight lg:pl-14 pb-6">
               WASSP multi-beam enables sustainable fishing, exploration, and

@@ -145,7 +145,7 @@ body {
     background-size: cover;
     &::after {
       content: '';
-      position: absolute;
+      position: relative;
       top: 70%;
       left: 0;
       width: 100vh;

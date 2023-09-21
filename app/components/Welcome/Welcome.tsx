@@ -4,9 +4,9 @@ import Image from 'next/image'
 const Welcome = () => {
   return (
     <main className="welcome-background">
-      <div className="flex flex-col ml-4 md:ml-72 lg:ml-96 md:px-1 lg:px-14 pt-36 md:pt-56 pb-28 md:pb-44">
+      <div className="flex flex-col pl-4 md:px-9 lg:pl-72 xl:ml-96 md:px-1 lg:px-14 pt-36 md:pt-56 pb-28 md:pb-44">
         <h1
-          className="text-3xl md:text-5xl lg:text-6xl text-left leading-tight mr-4 md:mx-10 md:pl-18 lg:mt-6 mb-6 lg:mb-10"
+          className="text-3xl md:text-5xl lg:text-6xl text-left leading-tight mr-4 lg:mt-6 mb-6 lg:mb-10"
           style={{ maxWidth: '750px' }}
         >
           WELCOME TO THE WORLD OF WASSP MULTIBEAM

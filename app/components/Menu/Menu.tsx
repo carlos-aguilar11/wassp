@@ -34,7 +34,7 @@ const Menu = () => {
             </p>
           </div>
           <div>
-            <div className="flex flex-row md:flex-wrap items-center pb-4 overflow-x-auto whitespace-nowrap max-w-max">
+            <div className="flex flex-row md:flex-wrap items-center pb-4 sm:pb-8 overflow-x-auto whitespace-nowrap max-w-max">
               {data.map((item: featureExplanations) => (
                 <button
                   key={item.id}
