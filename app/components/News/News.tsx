@@ -44,10 +44,10 @@ const News = () => {
   }
   return (
     <main className="news-background">
-      <div className="pl-4 md:pl-9 pb-3">
+      <div className="pl-4 pt-16 md:pl-9 pb-4">
         <LoadingBar id={4} />
       </div>
-      <div className="pt-8 md:pt-28 lg:pt-32">
+      <div className="pt-3 md:pt-8 lg:pt-12">
         <div className="flex-col space-y-16 md:space-y-32 ">
           <div className="text-left lg:flex lg:space-y-3 xl:space-x-32 pl-4 md:pl-9 pb-7 md:pb-4">
             <div className="flex space-x-24 pr-32 mb-8 lg:mb-0">

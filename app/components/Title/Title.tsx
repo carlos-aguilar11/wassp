@@ -27,7 +27,7 @@ const Title = () => {
 
           <div className="lg:flex items-center space-x-2 max-w-max">
             <a
-              href="#contact"
+              href=""
               className="text-white text-sm bg-transparent py-4 px-10 rounded-full border border-white hover:bg-white hover:text-black flex items-center space-x-2"
             >
               <span>Contact Us</span>
