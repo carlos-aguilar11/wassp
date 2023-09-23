@@ -39,7 +39,7 @@ const Menu = () => {
                 <button
                   key={item.id}
                   onClick={() => handleButtonClick(item.number)}
-                  className={`text-white text-sm bg-transparent py-2 px-9 rounded-full border border-white hover:text-blue-950  hover:bg-white flex items-center space-x-2 mb-2 mr-4 ${
+                  className={`text-white text-sm bg-transparent py-2 px-9 rounded-full border border-white hover:text-blue-950 flex items-center space-x-2 mb-2 mr-4 ${
                     buttonClicked === item.number
                       ? ' text-blue-950 bg-white'
                       : ''
